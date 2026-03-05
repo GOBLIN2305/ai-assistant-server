@@ -29,3 +29,6 @@ app.get("/chat", async (req, res) => {
 app.listen(3000, () => {
   console.log("AI server started");
 });
+app.get("/", (req, res) => {
+  res.send("OK. Use /chat?q=hello");
+});
